@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Watch Epic Anime Now</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoAppLink = "vnd.youtube://youtu.be/JRhZYiTshbU";
+        const videoWebLink = "https://youtu.be/JRhZYiTshbU?si=JGgyEEiQq14lDI3k";
+
+        // Try to open YouTube app
+        window.location = videoAppLink;
+
+        // Fallback to web if app isn't available
+        setTimeout(() => {
+          window.location = videoWebLink;
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to YouTube... <a href="https://youtu.be/JRhZYiTshbU?si=JGgyEEiQq14lDI3k">Click here if it doesn't redirect.</a></p>
+  </body>
+</html>
